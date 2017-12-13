@@ -1,0 +1,20 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#box{
+    max-width: 450px;
+    width:100%;
+    margin: 20px auto 0;
+    max-height: 450px;
+    height: 100%;
+}
+
+.quadrate{
+    background-color: orange;
+    padding: 15%;
+    margin: 2.5% 0 0 2.5%;
+    float: left;
+    border-radius: 5%;
+}

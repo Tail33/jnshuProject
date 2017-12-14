@@ -4,6 +4,7 @@ html{
     font-size: 625%;/*100px*/
 }
 
+
 body{
     margin: 0;
     background-color: #68cdd5;
@@ -11,6 +12,7 @@ body{
     font-size: 0.12rem;
     font-family: "Hiragino Sans GB","Microsoft YaHei",serif;
 }
+
 
 
 
@@ -60,19 +62,43 @@ body{
 
 .icon{
     margin: 0 auto;
-    width: 0.88rem;
-    height: 0.88rem;
+    
     background-repeat: no-repeat;
+    background-size: 100%;
    
 }
 
 .icon-left{
     background-image: url(../images/task3_11.png);
-    
+    width: 0.88rem;
+    height: 0.88rem;
     
 }
 
 .icon-right{
     background-image: url(../images/task3_13.png);
-   
+    width: 0.84rem;
+    height: 0.88rem;
+}
+
+
+@media screen and (max-device-width: 500px){
+	html{
+		font-size: 562.5%;
+	}
+}
+
+@media screen and (max-device-width: 425px){
+	html{
+		font-size: 500%;
+    }
+    
+    .foot-left{
+       
+        margin-left:0; 
+    }
+    .foot-right{
+        
+        margin-right: 0;
+    }
 }

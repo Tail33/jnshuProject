@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-color: #68cdd5;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Hiragino Sans GB";
+}
+
+
+
+.wrap{
+    position: relative;
+    padding: 114px 14%;
+}
+
+
+
+
+.backBtn{
+    position: absolute;
+    top:20px;
+    left: 35px;
+    background-image: url(../images/task3_03.png);
+    width: 54px;
+    height:54px;
+}
+
+
+
+.wrap h2{
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+
+
+.wrap>p{
+    font-size: 2.5em;
+    line-height: 1.6;
+    
+    margin-bottom: 174px;
+}
+
+
+
+
+.footer p{
+    font-size: 2em;
+}
+.foot-left{
+    float: left;
+    margin-left:30px; 
+}
+.foot-right{
+    float:right;
+    margin-right: 30px;
+}
+
+.icon{
+    margin: 0 auto;
+}
+
+.icon-left{
+    background-image: url(../images/task3_11.png);
+    width: 88px;
+    height: 88px;
+}
+
+.icon-right{
+    background-image: url(../images/task3_13.png);
+    width: 84px;
+    height: 88px;
+}

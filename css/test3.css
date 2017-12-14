@@ -1,44 +1,46 @@
+
+/* rest */
+html{
+    font-size: 625%;/*10px*/
+}
+
 body{
     margin: 0;
     background-color: #68cdd5;
     color: #fff;
-    font-size: 12px;
-    font-family: "Hiragino Sans GB";
+    font-size: 0.12rem;
+    font-family: "Hiragino Sans GB","Microsoft YaHei",serif;
 }
+
 
 
 
 .wrap{
     position: relative;
-    padding: 114px 14%;
+    padding: 1.14rem 14%;
 }
-
-
-
 
 .backBtn{
     position: absolute;
-    top:20px;
-    left: 35px;
+    top:0.2rem;
+    left: 0.35rem;
     background-image: url(../images/task3_03.png);
-    width: 54px;
-    height:54px;
+    background-size: 100%;
+    width: 0.54rem;
+    height:0.54rem;
 }
-
-
 
 .wrap h2{
     text-align: center;
-    margin-bottom: 115px;
+    margin-bottom: 1.15rem;
 }
 
 
 
 .wrap>p{
     font-size: 2.5em;
-    line-height: 1.6;
-    
-    margin-bottom: 174px;
+    line-height: 1.6;  
+    margin-bottom: 1.74rem;
 }
 
 
@@ -49,25 +51,28 @@ body{
 }
 .foot-left{
     float: left;
-    margin-left:30px; 
+    margin-left:0.3rem; 
 }
 .foot-right{
     float:right;
-    margin-right: 30px;
+    margin-right: 0.3rem;
 }
 
 .icon{
     margin: 0 auto;
+    width: 0.88rem;
+    height: 0.88rem;
+    background-repeat: no-repeat;
+   
 }
 
 .icon-left{
     background-image: url(../images/task3_11.png);
-    width: 88px;
-    height: 88px;
+    
+    
 }
 
 .icon-right{
     background-image: url(../images/task3_13.png);
-    width: 84px;
-    height: 88px;
+   
 }

@@ -1,0 +1,128 @@
+/* rest */
+html{
+    font-size: 625%;
+}
+
+body{
+    margin: 0;
+    font-size:0.32rem;
+    font-family: "黑体-繁";
+    background-color: #eff0f4;
+    color: #fff;
+
+}
+
+.wrap{
+    position: relative;
+    
+}
+
+
+/* head */
+.head{
+    background-color: #5fc0cd;
+    line-height: 2.75;
+    position: relative;
+    top:0;
+    width: 100%;
+    
+}
+
+.head .close{
+   position: absolute;
+   left: 0.3rem;
+   
+}
+
+.head .register{
+    position: absolute;
+    right: 0.3rem;
+    top:0;
+}
+
+.head .login{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* input */
+.inp{
+    background-color: #fff;
+    margin-top: .17rem;
+    padding: .24rem 0;
+}
+
+.inp .img{
+    width: .59rem;
+    height: .51rem;
+    margin: 0 .29rem;
+    float: left;
+    background-size: 100%;
+}
+.image-phone{
+    background-image: url(../images/test4_03.png);
+}
+
+.image-password{
+    background-image: url(../images/test4_07.png);
+}
+
+.wrap input{
+    border: none;
+    border-width: 0;
+    height: 0.49rem;
+    width: 50%;
+    font-size: .32rem;
+}
+input {
+    outline:none;
+
+}
+
+::-webkit-input-placeholder{
+    color:#e1e5e7;
+    font-size: 0.32rem;
+    
+}
+
+.inp span{
+    border:1px solid #e1e5e7;
+    margin-right: .32rem;
+}
+/* button */
+.wrap .btn{
+    background-color: #5fc0cd;
+    line-height: 2.72;
+    width: 100%;
+    border: none;
+    font-size: 0.36rem;
+    color: #fff;
+    margin-top: .77rem;
+    letter-spacing:0.15rem;
+}
+
+.wrap i{
+    font-style: normal;
+    color: #5fc0cd;
+    line-height: 2.7;
+    float: right;
+    margin-right: .30rem;
+}
+
+
+@media screen and (max-device-width: 425px){
+	html{
+		font-size: 500%;
+    }
+    
+
+}
+
+@media screen and (max-device-width: 425px){
+	html{
+		font-size: 400%;
+    }
+    
+
+}

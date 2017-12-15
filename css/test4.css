@@ -6,15 +6,14 @@ html{
 body{
     margin: 0;
     font-size:0.32rem;
-    font-family: "黑体-繁";
+    font-family: "黑体-繁",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
     background-color: #eff0f4;
     color: #fff;
-
 }
 
 .wrap{
     position: relative;
-    
+    padding-top: .88rem;
 }
 
 
@@ -22,7 +21,7 @@ body{
 .head{
     background-color: #5fc0cd;
     line-height: 2.75;
-    position: relative;
+    position: fixed;
     top:0;
     width: 100%;
     
@@ -74,22 +73,33 @@ body{
     height: 0.49rem;
     width: 50%;
     font-size: .32rem;
-}
-input {
+    text-indent: 2em;
     outline:none;
-
+    border-left: 2px solid #e1e5e7;
 }
 
-::-webkit-input-placeholder{
+
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color:#e1e5e7;
     font-size: 0.32rem;
-    
 }
 
-.inp span{
-    border:1px solid #e1e5e7;
-    margin-right: .32rem;
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#e1e5e7;
+    font-size: 0.32rem;
 }
+
+input:-ms-input-placeholder{
+    color:#e1e5e7;
+    font-size: 0.32rem;
+}
+input::-webkit-input-placeholder{
+    color:#e1e5e7;
+    font-size: 0.32rem;
+}
+
+
 /* button */
 .wrap .btn{
     background-color: #5fc0cd;
@@ -100,6 +110,7 @@ input {
     color: #fff;
     margin-top: .77rem;
     letter-spacing:0.15rem;
+    cursor:pointer;
 }
 
 .wrap i{
@@ -108,21 +119,20 @@ input {
     line-height: 2.7;
     float: right;
     margin-right: .30rem;
+    cursor:pointer;
 }
+
 
 
 @media screen and (max-device-width: 425px){
 	html{
 		font-size: 500%;
     }
-    
-
 }
 
 @media screen and (max-device-width: 425px){
 	html{
 		font-size: 400%;
     }
-    
 
 }

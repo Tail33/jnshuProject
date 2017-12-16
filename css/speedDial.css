@@ -18,3 +18,14 @@ body{
     float: left;
     border-radius: 5%;
 }
+
+#box button{
+    width: 100%;
+    margin: 2.5% 0;
+    float:left;
+    background-color: #fff;
+    border: 1px solid orange;
+    height: 50px;
+    color: orange;
+    
+}

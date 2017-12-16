@@ -1,0 +1,167 @@
+
+
+/* rest */
+
+
+html{
+    font-size: 625%;  /*100px*/
+}
+
+@media screen and (max-device-width: 450px){
+	html{
+		font-size: 500%;
+    }
+}
+
+@media screen and (max-device-width: 375px){
+	html{
+		font-size: 400%;
+    }
+
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: "黑体-繁",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+p{
+    margin: 0;
+    line-height: 1;
+}
+h1{
+    margin: 0;
+}
+
+.wrap{
+    width: 100%;
+}
+
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    background-color: #5fc0cd;
+}
+
+.header h1{
+    text-align: center;
+    font-size: .36rem;
+    line-height: 2.44;
+    color:#fff;
+}
+
+.backBtn{
+    position: absolute;
+    left: .3rem;
+    top: .25rem;
+    width: .3rem;
+    height: .38rem;
+    background: url(../images/test5_03.png) no-repeat;
+    background-size: 100%;
+}
+
+
+/* footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding:0 0 .4rem 5%;
+    font-size: .34rem;
+    line-height: 2.588; 
+}
+
+.btn{
+    float: left;
+    border-radius: .1rem;
+    width: 43%;
+    text-align: center;
+}
+
+.btn-message{
+    border: 1px solid #5fc0cd;
+    color: #5fc0cd;
+}
+
+.btn-contact{
+    margin-left: 3.4%;
+    border: 1px solid transparent;
+    background-color: #5fc0cd;
+    color: #fff;
+}
+
+
+/* main-start*/
+.main{
+    position: relative;
+    margin-top: .87rem;
+}
+
+.data{
+    position: relative;
+    background: url(../images/test5_02.jpg) no-repeat;
+    background-size: 100% 100%;
+
+}
+
+/* 遮罩层 */
+.shade{
+    width: 100%;
+    height: 100%;
+    padding: .74rem 0 .77rem;
+    background: rgba(0,0,0,0.2); 
+    
+}
+
+.head-portrait{
+    float: left;
+    width: 1.62rem;
+    height: 1.73rem;
+    margin-left: .3rem;
+    margin-right: .4rem;
+    border-radius: 50%;
+    background: url(../images/task5_03.png) no-repeat;
+    background-size: 100%;
+}
+
+.nameInfo{
+    padding: .4rem 0 .48rem;
+    color: #fff;
+}
+
+.name{
+    margin-bottom: .25rem;
+    font-size: .36rem;
+}
+
+.name i{
+    margin-left: .25rem;
+    font-size: .28rem;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-wz{
+    float: left;
+    width: .25rem;
+    height: .23rem;
+    margin-right: .1rem;
+    background: url(../images/task5_06.png) no-repeat;
+    background-size: 100%;
+}
+
+.address{
+    font-size: .24rem;
+}
+
+/* 护工资料 */
+
+
+
+
+
+
+/* main-end*/

@@ -9,13 +9,13 @@ html{
 
 @media screen and (max-device-width: 450px){
 	html{
-		font-size: 500%;
+		font-size: 450%;
     }
 }
 
 @media screen and (max-device-width: 375px){
 	html{
-		font-size: 400%;
+		font-size: 370%;
     }
 
 }
@@ -71,9 +71,10 @@ h1{
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding:0 0 .4rem 5%;
+    padding:.2rem 0 .4rem 5%;
     font-size: .34rem;
     line-height: 2.588; 
+    background-color: #fff;
 }
 
 .btn{
@@ -109,7 +110,7 @@ h1{
 .data{
     position: relative;
     background: url(../images/test5_02.jpg) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 
 }
 
@@ -130,7 +131,7 @@ h1{
     margin-right: .4rem;
     border-radius: 50%;
     background: url(../images/lion.jpg) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .nameInfo{

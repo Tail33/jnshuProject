@@ -1,0 +1,209 @@
+//公共调用样式
+
+//匹配模式：固定定位
+.fixed-body(top){
+    top:0;
+}
+
+.fixed-body(bottom){
+    bottom:0;
+}
+
+.fixed-body(@_){
+   position: fixed;
+   width:100%;
+}
+
+
+@px50:312.5%;
+
+
+//项目样式
+html{
+    font-size: @px50;
+}
+/*header start*/
+header{
+    display: flex;
+    justify-content: center;
+    .fixed-body(top);
+    padding-top: .1rem;padding-bottom: .08rem;
+    background-color: #5fc0cd;
+    z-index: 1000;
+    .toggleBtn{
+        display: flex;
+        .guzhuBtn,.hugongBtn{
+            width:1.44rem;
+            line-height: .7rem;
+            font-size: .34rem;
+            text-align: center;
+            border-radius: .08rem;
+        }
+        .guzhuBtn{
+            background-color: #55a8b3;
+            color:#fff;
+        }
+        .hugongBtn{
+            margin-left: -0.1rem;
+            background-color: #fff;
+            color:#5fc0cd;
+        }
+    }
+    .location{
+        position: absolute;
+        right: .3rem;
+        top: .22rem;
+        width: .42rem; 
+        height: .44rem;
+        background: url('../images/task6_sprites.png') -10px -232px;
+    }
+}
+/*header end*/
+
+/*nav start*/
+nav{
+    margin-top: 44px;
+    border-bottom: 1px solid #e2eaec;
+    .nav-col{
+        padding: 0;
+        border-right: 1px solid #e1e5e7;
+        button{
+            width: 100%;
+            border-width: 0;
+        }
+        ul{
+            width: 100%;
+            min-width: 0;
+            overflow: hidden;
+        }
+        span{
+            position: absolute;
+            right: .1rem;
+            top:50%;
+            margin-top: -2px;
+        }
+    }
+}
+/*nav end*/
+
+/*main start*/
+main{
+    padding-bottom: 1.1rem;
+
+    /* 雪碧图背景图标 */
+.date-icon{
+    
+    width: 12px; height: 12px;
+    margin-right: .14rem;
+    background: url('../images/task6_sprites.png') -10px -10px;
+}
+.btn-icon{
+    float: right;
+    width: 10px; height: 17px;
+    background: url('../images/task6_sprites.png') -10px -74px;
+}
+.icon-location{
+    
+    width: 12px; height: 12px;
+    margin-right: .14rem;
+    background: url('../images/task6_sprites.png') -10px -42px;
+}
+
+.info-li{
+    padding: .3rem;
+    border-bottom:1px solid #e1e5e7;
+    font-size: .26rem;
+    color: #999999;
+    .icon-font{
+        display: flex;
+        align-items: flex-start;
+        span{     
+            line-height: 1;
+        }
+    }
+    .date-price{
+        display: flex;
+        align-items: center;
+        >span{
+            flex: 1;
+            padding-left: .38rem;
+            overflow: hidden;/*溢出隐藏*/
+            text-overflow: ellipsis;/*文本溢出省略号*/
+            white-space: nowrap;/*不换行*/
+            line-height: .72rem;
+            font-size: .28rem;
+            font-weight: bold;
+            color:#000;
+        }
+        .price{
+            width:1.82rem;
+            font-size: .3rem;
+            color:red;
+            line-height: .33rem;
+            >span{
+                float: left;
+                line-height: 1;
+            }
+            
+        }
+    }
+}
+}
+/*main end*/
+
+/*footer start*/
+@write-width:.94rem;
+footer{
+    .fixed-body(bottom);
+    border-top: 1px solid #e2eaec;
+    background-color: #f8fafb;
+    font-size: .2rem;
+    .home,.myself{
+        text-align: center;
+        margin-top: .12rem;
+        p{
+            margin-bottom: .1rem;
+        }
+    }
+    .home{
+        color: #5fc0cd;
+        span{
+            display: inline-block;
+            width: .46rem; height: .4rem;
+            background: url('../images/task6_sprites.png') -10px -111px; 
+        }
+    }
+    .myself{
+        color: #a5a5a5;
+        span{
+            display: inline-block;
+            width: .42rem; height: .42rem;
+            background: url('../images/task6_sprites.png') -10px -191px;
+        }
+    div{
+        cursor: pointer;
+    }
+    }
+    .write{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        width:@write-width;
+        height: @write-width;
+        margin-left: -(@write-width/2) ;
+        margin-top: -(@write-width/2);
+        border-radius: 50%;
+        background-color: #5fc0cd;
+        span{
+            display: block;
+            width:.4rem;
+            height: .4rem;
+            position: relative;
+            top:50%;
+            left: 50%;
+            margin: -0.24rem 0 0 -0.19rem;
+            background: url('../images/task6_sprites.png') -10px -151px;
+        }
+    }
+}
+/*footer end*/

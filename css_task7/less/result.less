@@ -1,0 +1,165 @@
+@import "public.less";
+
+@top-backgroundColor:#29bde0;//上部分的背景颜色
+
+html{
+    font-size: @px50;
+}
+body{
+    font-size: 16px;
+}
+p,ul{
+    padding: 0;
+    margin: 0;
+}
+h3{
+    font-size: .3rem;
+    color: #515151;
+    font-weight: bold;
+}
+/*header start*/
+header{
+    .fixed-body(top);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: .18rem .18rem .20rem .19rem;
+    border-bottom: 1px solid #74d4eb;
+    background-color: @top-backgroundColor;
+    font-size: .34rem;
+    color: #fff;
+    a{
+        height: 27px;
+        cursor: pointer;
+       &.home-btn{
+           width: 26px;
+           background: url("../images/home-btn.png");
+       }
+       &.info-btn{
+           width: 20px;
+           background: url("../images/info-btn.png");
+       } 
+    }
+}
+/*header end*/
+
+/*main start*/
+.main-top{
+    margin-top: 48px;
+    padding: .4rem .7rem 0;
+    background-color: @top-backgroundColor;
+
+    .tip{
+        flex:none;
+        width: 176px;
+        height: 103px;
+        margin: 0 auto;
+        background: url("../images/tip.png");
+        h3{
+            position: relative;
+            top: 1.33rem;
+            font-size: .48rem;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .tip-text{ 
+        text-align: justify;
+        display: block;
+        margin: 0 auto;
+        padding: .21rem 0 0;
+        font-size: .33rem;
+        font-weight: bold;
+        color:#ffc865;
+        letter-spacing: 2.2px;
+    }
+    .statistics{
+        flex: none;
+        width: 5rem;
+        padding:.4rem 0 .25rem;
+        font-size: .26rem;
+        color:#fff;
+        ul{
+            margin: .1rem 0;
+           
+            list-style: none;
+            li{
+               
+                padding: 0;
+                i{
+                    width: .85rem;
+                    display: inline-block;
+                    text-align: justify;
+                    font-style: normal;
+                    vertical-align:text-top;
+                    margin-bottom: -0.3rem;
+                    &:after{
+                        content:'';
+                        width: 100%;
+                        display: inline-block;
+                        overflow: hidden;
+                        height: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.main-bottom{
+    padding: 0 0 66.5px 0;
+    font-size: .26rem;
+    color:#a6a6a6;
+    .li-info{
+        padding: 0 .7rem .34rem;
+        border-bottom:1px solid #dddddd;
+        h3{
+            line-height: .6rem;
+            margin-bottom: .1rem;
+        }
+        p{
+            line-height: .5rem;
+        }
+        .how-long{
+            display: block;
+            position: absolute;
+            top:.14rem;
+            right: 1rem;
+        }
+    }
+    
+}
+/*main end*/
+/*footer start*/
+footer{
+    .fixed-body(bottom);
+    padding: .24rem 0 .19rem;
+    background-color: #99dff0;
+    filter:alpha(opacity=52)
+
+    
+}
+footer{
+    button{
+        width: 100%;
+        border:none;
+        border-radius: .1rem;
+        font-size: .4rem;
+        color: #fff;
+        line-height: .86rem;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+        }   
+    }
+    :first-child button{
+        background-color: #f66f6f
+    }
+    :last-child button{
+        background-color: #fbb435
+    }
+}
+/*footer end*/
+
+
+

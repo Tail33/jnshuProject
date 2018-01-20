@@ -156,7 +156,7 @@ ul {
 }
 .g-mn .list .item {
   width: 25vw;
-  margin: 0 4.16666667vw;
+  margin: 0 4vw;
 }
 .g-mn .list .item:hover .icon {
   visibility: visible;

@@ -67,6 +67,7 @@ main .top {
   font-size: .35rem;
   line-height: 1.15rem;
   color: #9a9a9a;
+  cursor: pointer;
 }
 main .top .back-btn {
   position: absolute;
@@ -93,6 +94,7 @@ main .versions .version {
   font-size: .32rem;
   line-height: 1.32rem;
   color: #fff;
+  cursor: pointer;
 }
 main .versions span {
   line-height: .77rem;
@@ -117,11 +119,13 @@ main .versions .triangle-btn {
   position: absolute;
   right: .1rem;
   top: 3.65rem;
+  display: block;
   width: 0;
   height: 0;
   border-style: solid;
   overflow: hidden;
   border-width: 0.275rem 0 0.275rem 0.3rem;
   border-color: transparent transparent transparent #fbb435;
+  cursor: pointer;
 }
 /*main end*/

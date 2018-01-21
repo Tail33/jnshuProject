@@ -8,7 +8,7 @@
 3. [css_task4][4]
 4. [css_task5][5]
 5. [css_task6][6]
-5. [css_task7][6]
+5. [css_task7][7]
 
 ## js 任务
 1. [js_task1：九宫格变色][js_1]

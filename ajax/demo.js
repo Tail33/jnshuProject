@@ -7,7 +7,7 @@ $(document).ready(function(){
     $.ajax({
         type: 'get',
         async: false,
-        url: 'http://api.k780.com/?app=weather.city&appkey=31038&sign=31285703d59d2a88e60dfa39f526c0a2&format=json&jsoncallback=data',
+        url: 'https://sapi.k780.com/?app=weather.city&appkey=31038&sign=31285703d59d2a88e60dfa39f526c0a2&format=json&jsoncallback=data',
         dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'data',
@@ -74,7 +74,7 @@ $(document).ready(function(){
                 $.ajax({
                     type: 'get',
                     async: false,
-                    url: 'http://api.k780.com/?app=weather.pm25&weaid='+weaid+'&appkey=31038&sign=31285703d59d2a88e60dfa39f526c0a2&format=json&jsoncallback=data',
+                    url: 'https://sapi.k780.com/?app=weather.pm25&weaid='+weaid+'&appkey=31038&sign=31285703d59d2a88e60dfa39f526c0a2&format=json&jsoncallback=data',
                     dataType: 'jsonp',
                     jsonp: 'callback',
                     jsonpCallback: 'data',

@@ -85,7 +85,6 @@ a {
 .m-hd .m-nav {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
   padding: 0;
 }
 .m-hd .m-nav .logo {
@@ -98,6 +97,7 @@ a {
   width: 101px;
   text-align: center;
   box-sizing: border-box;
+  border-bottom: 4px solid transparent;
 }
 .m-hd .m-nav .list li a {
   line-height: 95px;
@@ -105,7 +105,7 @@ a {
 }
 .m-hd .m-nav .list li:hover,
 .m-hd .m-nav .list li.active {
-  border-bottom: 4px solid #fff;
+  border-color: #fff;
 }
 /* /m-hd */
 /* m-ft */
@@ -155,9 +155,14 @@ a {
   color: #29b078;
 }
 /*响应式*/
+@media (min-width: 992px) {
+  .list .navbar-nav {
+    margin-right: -34.5px;
+  }
+}
 @media (max-width: 992px) {
   .m-hd .m-nav {
-    padding: 10px;
+    padding: 10px 0;
   }
   .m-nav .list li {
     width: 100% !important;
@@ -178,6 +183,14 @@ a {
   }
   .m-ft .u-share-wx {
     float: none;
+  }
+}
+@media (max-width: 576px) {
+  .m-hd .top .shareLink a {
+    margin-left: 5px;
+  }
+  .m-hd .top .telNum {
+    font-size: 12px;
   }
 }
 ul {
@@ -365,6 +378,12 @@ main {
   }
   .box {
     margin-right: 26px;
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 400px) {

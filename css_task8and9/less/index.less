@@ -150,7 +150,7 @@ main{
         }
         .coop:hover{
             z-index: 1000;
-            box-shadow: 5px 5px 5px #888888;
+            box-shadow:5px 0px 5px 1px #f7f7f7, -5px 0px 5px 1px #f7f7f7;
         }
     }
     .link{
@@ -160,11 +160,12 @@ main{
             line-height: 60px;
         }
         ul{
-            list-style: disc;
+            flex-wrap: wrap;
+            
+            // list-style: disc;
+            // padding-left: 15px;
             li{
-                padding: 0;
-                // float: left;
-                // margin-right: 65px;
+                flex:0 0 120px;
                 box-sizing: border-box;
                 height: 30px;
                
@@ -173,15 +174,24 @@ main{
                     font-size: 14px;
                     line-height:30px;
                     color:@main-color;
-                     &:hover{
-                    border-bottom: 1px solid @skin-color;
-                    }
+                
                 }
                 a:hover{
                     text-decoration: none;
                 }
+                div:hover{
+                    border-bottom: 1px solid @skin-color;
+                    }
                
             }
+        }
+        .disc{
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background-color: #a3a3a3;
+            border-radius: 50%;
+            vertical-align: middle;
         }
     }
 }
@@ -241,6 +251,7 @@ main{
         margin-left: 20px;
     }
     main .link ul{
-        padding-left: 30px;
+        // padding-left: 30px;
     }
+
 }

@@ -85,7 +85,6 @@ a {
 .m-hd .m-nav {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
   padding: 0;
 }
 .m-hd .m-nav .logo {
@@ -98,6 +97,7 @@ a {
   width: 101px;
   text-align: center;
   box-sizing: border-box;
+  border-bottom: 4px solid transparent;
 }
 .m-hd .m-nav .list li a {
   line-height: 95px;
@@ -105,7 +105,7 @@ a {
 }
 .m-hd .m-nav .list li:hover,
 .m-hd .m-nav .list li.active {
-  border-bottom: 4px solid #fff;
+  border-color: #fff;
 }
 /* /m-hd */
 /* m-ft */
@@ -155,9 +155,14 @@ a {
   color: #29b078;
 }
 /*响应式*/
+@media (min-width: 992px) {
+  .list .navbar-nav {
+    margin-right: -34.5px;
+  }
+}
 @media (max-width: 992px) {
   .m-hd .m-nav {
-    padding: 10px;
+    padding: 10px 0;
   }
   .m-nav .list li {
     width: 100% !important;
@@ -178,6 +183,14 @@ a {
   }
   .m-ft .u-share-wx {
     float: none;
+  }
+}
+@media (max-width: 576px) {
+  .m-hd .top .shareLink a {
+    margin-left: 5px;
+  }
+  .m-hd .top .telNum {
+    font-size: 12px;
   }
 }
 main {
@@ -327,7 +340,7 @@ main .cooperative .coop {
 }
 main .cooperative .coop:hover {
   z-index: 1000;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 0px 5px 1px #f7f7f7, -5px 0px 5px 1px #f7f7f7;
 }
 main .link {
   background-color: #fff;
@@ -336,10 +349,10 @@ main .link h2 {
   line-height: 60px;
 }
 main .link ul {
-  list-style: disc;
+  flex-wrap: wrap;
 }
 main .link ul li {
-  padding: 0;
+  flex: 0 0 120px;
   box-sizing: border-box;
   height: 30px;
 }
@@ -350,10 +363,18 @@ main .link ul li a {
   color: #999999;
 }
 main .link ul li a:hover {
+  text-decoration: none;
+}
+main .link ul li div:hover {
   border-bottom: 1px solid #29b078;
 }
-main .link ul li a:hover {
-  text-decoration: none;
+main .link .disc {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #a3a3a3;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 @media (min-width: 992px) {
   .col-1-5 {
@@ -405,8 +426,5 @@ main .link ul li a:hover {
   }
   main .study-box .box-item {
     margin-left: 20px;
-  }
-  main .link ul {
-    padding-left: 30px;
   }
 }

@@ -1,0 +1,232 @@
+ h2{
+	font-size: 18px;
+	color:#333333;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: "微软雅黑";
+}
+.content{
+	background-color: #fafafa;
+	color:#999999;
+	padding: 160px 0 0 0;
+}
+.box1,.box2,.box3,.box4{
+	text-align: center;
+}
+.superiority{
+	margin-bottom: 100px;
+}
+.superiority div > h3{
+	font-size: 18px;
+	color:#333333;
+	padding: 12px 0 0 0;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+.superiority p{
+	width: 224px;
+	text-align: left;
+	font-size: 16px;
+	display: inline-block;
+}
+/*box3 p的宽度与box1 box2不同*/
+.box3 p{
+	width: 240px;
+}
+/*图片高度不一致，调成一致*/
+.box2 img{
+	margin-top: 11px;
+}
+.box3 img{
+	margin-top: 3px;
+}
+
+.box4{
+	border-left: 1px dashed #dedede;
+	padding:40px 0;
+	text-align: center;
+}
+.box4 .square{
+	width: 185px;
+	font-size: 18px;
+	padding:  0 0 29px 0;
+	text-align: left;
+	margin: 0 auto;
+}
+.box4 .square div{
+	padding-bottom:12px; 
+	color:#29b078;
+
+}
+.box4 .square div img{
+	vertical-align: baseline;
+}
+
+
+/*.criteria{
+	margin-top: 60px;
+	height: 73px;
+}*/
+.criteria{
+	height: 73px;
+	margin-bottom: 100px;
+}
+.criteria p,.criteria span{
+	float: left;
+	width: 150px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 13px 0 0 10px;
+}
+.criteria span{
+	display: block;
+	height: 73px;
+	line-height: 73px;
+	margin-top: 0;
+}
+.circle{
+	float: left;
+	width: 73px;
+	height: 73px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 70px;
+	border:1px solid #c5c3c3;
+	border-radius:50%;
+	font-size: 18px;
+	color: #29b078;
+}
+.criteria img{
+	position: relative;
+	top:23px;right: 0;
+}
+
+.while-squere{
+	width: 270px;
+	height: 370px;
+	background-color: #fff;
+	border:1px solid #ece4e4;
+	border-radius: 5px;
+	
+}
+.head-portrait{
+	width: 111px;
+	height: 113px;
+	margin: 20px 0 34px 82px;
+	background-image: url('images/head-portrait.png'); 
+}
+.name-title{
+	font-size: 18px;
+	color:#333333;
+	text-align: center;
+	height: 43px;
+	font-weight: bold;
+}
+.referral{
+	padding-left:29px;
+	width: 210px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 25px; 
+}
+.box-circle{
+	margin: 19px 0 100px 0;
+	text-align: center;
+}
+.smallcircle{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border-radius:50%;
+}
+.grenncircle{
+	background-color: #29b078;
+}
+.outstanding-students h2{
+	margin-bottom: 0;
+}
+.while-squere{
+	margin-top: 65px;
+}
+
+
+
+.cooperative{
+	padding-bottom: 90px;
+}
+.white-square{
+	background-color: #fff;	
+	border:1px solid #ece4e4;
+	box-shadow: 0.5px 0.5px 1px #888888;
+}
+.white-square>div{
+	text-align: center;
+	padding: 40px 0;
+}
+
+
+
+.link{
+	background-color: #fff;
+	padding-bottom: 10px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.link li{
+	
+	list-style-position: inside;
+	text-align: left;
+}
+.link ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.link li a{
+	color:#999999;
+}
+.link h2{
+	margin-bottom: 20px;
+}
+@media screen and  (max-device-width:1176px){
+	.criteria{
+		margin:0 auto 50px;
+		width: 280px;
+		}
+	.while-squere{
+		margin:40px auto 0 auto;
+	}
+	.box2{
+		margin-bottom: 30px;
+	}
+	.box4{
+		border-left:0;
+	}
+	.box4 .square{
+		text-align: center;
+	}
+}
+@media screen and (min-device-width:768px) and (max-device-width:992px){
+	
+}
+@media screen and (max-device-width:768px){
+	.content{
+		padding-top: 0;
+	}
+	.box1,.box2,.box3{
+		padding-top:30px;
+	}
+	
+	.carousel-indicators{
+		bottom: 0;
+	}
+	.superiority{
+		margin-bottom: 0;
+	}
+
+}
+

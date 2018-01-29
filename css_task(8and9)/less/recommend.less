@@ -1,0 +1,125 @@
+@import "global.less";
+
+/*统一处理*/
+.mainc,.content{
+    background-color: #fff;
+    border:1px solid @border-color;
+    border-radius: 10px;
+}
+
+/*模块*/
+
+/*m-show*/
+.m-show{
+    background-color: #f1a750;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.m-mn{
+    padding:30px 0 228px;
+    .crumb{
+        margin-bottom: 28px;
+    }
+
+    .content-wrap{
+        padding: 0 0 0 30px;
+    }
+    .content{
+        padding: 18px 60px 127px;
+        p{
+            line-height: 35px;
+            text-align: justify;
+            font-size: 14px;
+            color:@main-color;
+        }
+        >p{
+            text-indent: 2em;
+            margin-bottom: 25px;
+        }
+        .synopsis{
+            align-items: center;
+            margin: 0 -60px 25px;
+            padding: 0 60px;
+            border-bottom: 1px solid #e6e6e6;
+            img{
+                width: 124px;
+                height: 35px;
+                margin: 0 35px 0 20px;
+            }
+            p{
+                
+            }
+        }
+    }
+    .mainc{
+        padding: 0;
+        max-height: 750px;
+        text-align: center;
+        li{
+            margin: 30px 0;
+            a{
+                .crumb_crt; 
+            }
+            
+        }
+        .title{
+            display: block;
+            line-height: 60px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .circle{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #ff9052;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .circle_active{
+            background-color: #f9a372;
+        }
+    }
+}
+
+
+/*响应式*/
+
+@media (max-width: 992px){
+    .m-mn{
+        padding-bottom: 50px;
+        .mainc{
+            margin-bottom: 50px;
+            li{
+                float: left;
+                margin: 10px !important;
+            }
+        }
+    
+        .content-wrap{
+            padding: 0;
+            .synopsis{
+                margin: 0;
+                padding: 0;
+                display: block !important;
+                img{
+                    float: left;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 375px){
+    .m-mn{
+        .content{
+            padding-left:20px;
+            padding-right: 20px; 
+        }
+    }
+}

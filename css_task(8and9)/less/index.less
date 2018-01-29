@@ -1,0 +1,246 @@
+@import 'global.less';
+
+main{
+    background-color: @main-backgroundColor;
+    color:@main-color;
+    padding-top: 165px;
+    h2,h3{
+        text-align: center;
+        color: #333333;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .trait-wrap{
+        .trait{
+            width: 227px;
+            letter-spacing: 2px;
+            text-align: center;
+            p{
+                display: inline-block;
+                text-align: left;
+            }
+        }
+        h3{
+            line-height: 83px;
+           
+        }
+        .hj-icon,.gf-icon,.rm-icon{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 64px;
+            font-size: 16px;
+            img{
+                vertical-align: bottom;
+            }
+        }
+        .width257{
+            width:258px;
+        }
+        .statistics{
+            padding:65px  0px 50px 65px; 
+            border-left: 1px dashed @main-color;
+        }
+    }
+    .study-box{
+        .container{
+            overflow: hidden;
+        }
+        .box-wrap{
+            width: 315px*4;
+        }
+        .box-item{
+            padding: 0;
+        }
+        .d-flex{
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        h2{
+            margin-top: 100px;
+            margin-bottom: 53px;
+        }
+        .z-icon{
+            flex-basis: auto;
+            flex-shrink: 0;
+            width: 28px;
+            height: 27px;
+            background-image: url('../images/icon1.png');
+            margin-right: 20px;
+        }
+        .circle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: auto;
+            flex-shrink: 0;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            color:@skin-color;
+            background-color: #fff;
+        }
+        p{
+            flex-shrink: 1;
+            margin-bottom: 0;
+            margin: 0 34px 0 18px;
+            font-size: 14px;
+        }
+    }
+    .outstanding-students{
+        .student-box-wrap{
+            width:(270px+40px) *4;
+        }
+        h2{
+            margin: 17px 0 0;
+        }
+        .head-portrait{
+            width: 113px;
+            height: 113px;
+            border-radius:50%;
+            background-size: cover;
+            background-image: url('../images/head-portrait.png');
+        }
+        .student-box{
+            margin-right: 25px;
+            margin-left:-15px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // width: 271px;
+            padding: 19px 35px 35px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #e2e2e2;
+            margin-top: 70px;
+        }
+        strong{
+            line-height: 80px;
+            font-size: 18px;
+            color: #000;
+        }
+
+    }
+    .box-circle{
+        display: flex;
+        justify-content: center;
+    }
+    .smallcircle{
+        margin: 24px 5px 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .grenncircle{
+        background-color: @skin-color;
+    }
+    .cooperative{
+        
+        margin-bottom: 85px;
+        h2{
+            margin: 130px 0 66px 0;
+        }
+        .coop{
+            background-color: #fff;
+            text-align: center;
+            padding: 60px 0;
+        }
+        .coop:hover{
+            z-index: 1000;
+            box-shadow: 5px 5px 5px #888888;
+        }
+    }
+    .link{
+        
+        background-color: #fff;
+        h2{
+            line-height: 60px;
+        }
+        ul{
+            list-style: disc;
+            li{
+                padding: 0;
+                // float: left;
+                // margin-right: 65px;
+                box-sizing: border-box;
+                height: 30px;
+               
+                a{
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height:30px;
+                    color:@main-color;
+                     &:hover{
+                    border-bottom: 1px solid @skin-color;
+                    }
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+               
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px){
+    .col-1-5{
+        flex: 0 0 20%;
+    }
+    .col-1-10{
+        flex: 0 0 10% !important;
+    }
+}
+@media (min-width: 768px){
+    .col-1-10{
+        flex: 0 0 12%;
+    }
+}
+@media(max-width:1200px){
+    .box-wrap,.student-box-wrap{
+        width: 100% !important;
+    }
+    main .outstanding-students .student-box{
+        margin-left: 0;
+    }
+    .student-box-wrap{
+        margin-left: 0;
+    }
+    main .outstanding-students .student-box{
+        margin-left:0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:992px){
+    main{
+        padding-top: 50px;
+    }
+}
+
+@media(max-width:768px){
+    .box-item{
+        justify-content: center;
+    }
+    main .study-box .z-icon{
+        margin-right: 0;
+    }
+}
+
+@media (max-width:576px){
+    main .trait-wrap .statistics{
+        padding: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+    main .study-box .box-item{
+        margin-left: 20px;
+    }
+    main .link ul{
+        padding-left: 30px;
+    }
+}

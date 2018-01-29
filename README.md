@@ -8,7 +8,8 @@
 3. [css_task4][4]
 4. [css_task5][5]
 5. [css_task6][6]
-5. [css_task7][7]
+6. [css_task7][7]
+7. [css_task(8and9)][8]
 
 ## js 任务
 1. [js_task1：九宫格变色][js_1]
@@ -19,6 +20,7 @@
 [5]: https://tail33.github.io/jnshuProject/css_task5/tesk5.html
 [6]: https://tail33.github.io/jnshuProject/css_task6/task6.html
 [7]: https://tail33.github.io/jnshuProject/css_task7/index.html
+[8]: https://tail33.github.io/jnshuProject/css_task(8and9)/index.html
 
 
 [js_1]: https://tail33.github.io/jnshuProject/js_task1/index.html

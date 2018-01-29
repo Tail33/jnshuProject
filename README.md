@@ -20,7 +20,7 @@
 [5]: https://tail33.github.io/jnshuProject/css_task5/tesk5.html
 [6]: https://tail33.github.io/jnshuProject/css_task6/task6.html
 [7]: https://tail33.github.io/jnshuProject/css_task7/index.html
-[8]: https://tail33.github.io/jnshuProject/css_task(8and9)/index.html
+[8]: https://tail33.github.io/jnshuProject/css_task8and9/index.html
 
 
 [js_1]: https://tail33.github.io/jnshuProject/js_task1/index.html

@@ -167,7 +167,7 @@ ul {
 .m-mn .content-text {
   position: relative;
   padding-left: 45px;
-  padding-right: 150px;
+  padding-right: 140px;
   border: 1px solid #e7e7e7;
   margin: 0 -1px;
   color: #8b8c8c;
@@ -367,6 +367,13 @@ ul {
   .m-mn .content-text {
     padding-left: 15px;
   }
+  .m-mn .size label {
+    display: block;
+  }
+  .m-mn .size > i {
+    margin: 0;
+    margin-top: 15px;
+  }
 }
 @media (max-width: 622px) {
   .m-ft .top-inner > * {
@@ -377,13 +384,6 @@ ul {
   }
   .m-ft .top-inner h3 {
     font-size: 16px;
-  }
-  .m-mn .size label {
-    display: block;
-  }
-  .m-mn .size > i {
-    margin-top: 15px;
-    margin-left: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -398,5 +398,8 @@ ul {
   .m-mn h3 {
     font-size: 16px;
     line-height: 25px;
+  }
+  .m-mn .content {
+    font-size: 14px;
   }
 }

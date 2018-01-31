@@ -364,13 +364,7 @@ ul {
   .m-mn .pattern {
     width: 100%;
   }
-  .m-mn .select-btn {
-    top: -5px;
-    right: 0;
-    transform: translateY(-100%);
-  }
   .m-mn .content-text {
-    padding-right: 0;
     padding-left: 15px;
   }
 }

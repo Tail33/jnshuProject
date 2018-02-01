@@ -1,0 +1,106 @@
+@skin-color:#29b078;
+@main-backgroundColor:#fafafa;
+@main-color:#999999;
+
+
+
+//修改boostrap中的container 的长度为1200 （根据设计图）
+@media (min-width:1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+body{
+    font-family: "微软雅黑";
+}
+
+
+/* header */
+header{
+    /*加载分享图标*/
+    .img-wrap>a>div[id]{
+        width: 25px;
+        height: 27px;
+    }
+    #weixin-img{
+        background-image: url('../images/icon_wx.png');
+    }
+    #qq-img{
+        background-image: url('../images/icon_qq.png');
+    }
+    #weibo-img{
+        background-image: url('../images/icon_wb.png');
+    }
+    /* /加载分享图标*/
+    .tel-word{
+        line-height: 38px;
+        color: @skin-color;
+    }
+    .img-wrap{
+        float: right;
+        position: relative;
+        top:50%;
+        transform: translate(0,-50%);
+        >a{
+            float: left;
+            margin-left: 15px;
+        }
+    }
+    .nav-wrap{
+        background-color: @skin-color;
+    }
+    .nav{
+        float: right;
+        margin-right: -(101px/2-16);
+        // height: 99px;
+        >.nav-item{
+            width: 101px;
+            text-align: center;
+            box-sizing: border-box;
+            
+            >a{
+                line-height: 95px;
+                font-size: 16px;
+                color: #fff;
+            }
+            >a:hover{
+                text-decoration:none;
+            }
+        }
+        >.nav-item:hover,.a-link{
+            border-bottom: 4px solid #fff;
+        }
+    }
+}
+
+
+/* /header */
+
+/*footer*/
+footer{
+    padding-top: 35px;
+    background-color: @skin-color;
+    color: #fff;
+    font-size: 16px;
+    .copyright{
+        text-align: center;
+        margin: 0;
+        line-height: 30px;
+        color: #fff;
+        font-size: 14px;
+    }
+    .share-wx{
+        float: right;
+        padding: 0 30px 20px;
+    }
+    a{
+        color: #fff;
+    }
+    a:link{
+        color: #fff;
+    }
+    a:hover{
+        color: #fff;
+    }
+}
+/*/footer*/

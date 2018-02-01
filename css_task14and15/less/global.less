@@ -1,0 +1,243 @@
+//公共调用样式:主题颜色，字体颜色，背景颜色;
+//三个页面都会使用同个头部和尾部的样式。
+
+@skin-color:#29b078;//主题颜色
+@main-backgroundColor:#fafafa;//主题背景颜色
+@main-color:#999999;//主要字体颜色
+@page-width:1200px;
+@border-color:#eeeded;
+
+/* 功能 */
+.f-fr{//向右浮动
+    float: right;
+}
+.p-l{
+    padding-left: -15px;
+}
+.p-r{
+    padding-right: -15px;
+}
+.m-l{
+    margin-left: -15px;
+}
+.m-r{
+    margin-right: -15px;
+}
+.f-bold{
+    font-weight: bold;
+}
+.f-mr0{
+    margin-right: 0 !important;
+}
+.f-br0{
+    border-right: 0 !important;
+}
+
+
+/* 默认*/
+
+@media (min-width:@page-width){//修改boostrap中的container 的长度为1200 （根据设计图）
+    .container{
+        max-width: @page-width;
+        // padding: 0;
+    }
+}
+body{
+    font-family: "微软雅黑";
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #000;
+}
+
+/*统一处理*/
+.nav-wrap,.m-ft{
+    background-color: @skin-color;
+    color: #fff;
+    a{
+        color:#fff;
+    }
+}
+
+/* 模块 */    
+
+
+/* m-hd */
+.m-hd{
+    
+   .top{
+        justify-content: space-between;
+        align-items: center;
+       .telNum{
+            font-size: 14px;
+            line-height: 40px;
+            color: @skin-color;
+       }
+       .shareLink{
+           a{
+               float: left;
+               margin-left: 15px;
+           }
+       }
+        /*加载分享图标*/
+        .icon{
+            display: block;
+            width: 25px;
+            height: 25px;
+        }
+        #share-weixin-img{
+                background: url('../images/icon_wx.png') no-repeat center/cover;
+            }
+        #share-qq-img{
+                background: url('../images/icon_qq.png') no-repeat center/cover;
+            }
+        #share-weibo-img{
+                background: url('../images/icon_wb.png') no-repeat center/cover;
+            }
+    }
+    
+//导航栏
+    .m-nav{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 0;
+        .logo{
+            display: inline-block;
+        }
+
+        .list{
+            flex-grow: 0;
+            // float: right;
+            li{
+                width: 101px;
+                text-align: center;
+                box-sizing: border-box;
+                border-bottom: 4px solid transparent;
+                a{
+                    line-height: 95px;
+                    font-size: 16px;
+                }
+                &:hover,&.active{
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+
+}
+/* /m-hd */
+
+/* m-ft */
+.m-ft{
+    p{
+        margin: 0;
+    }
+    padding: 36px 0 0;
+    .u-share-wx{
+       float: right; 
+       margin:0 18px 18px 0; 
+       p{
+           margin-bottom: 5px;
+       }
+    }
+
+    .copyright{
+        text-align: center;
+        border-top: 1px solid #32c086;
+        line-height: 30px;
+    }
+
+    .m-help{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height: 110px;
+    }
+    .m-help-link{
+        padding-left: 36px;
+        a{
+            display: inline-block;
+            &:hover{
+                border-bottom: 1px solid #fff;  
+            }
+        }
+    }
+    a,.copyright{
+        font-size: 14px;
+    }
+}
+/* /m-ft */
+
+.m-mn{
+    background-color: @main-backgroundColor;
+}
+
+
+/*状态*/
+.crumb_crt{
+    color: @skin-color;
+}
+
+
+
+
+
+
+/*响应式*/
+@media(min-width:992px){
+    .list .navbar-nav{
+        margin-right: -(101px/2-16px);
+    }
+}
+@media (max-width: 992px) {
+    .m-hd{
+        .m-nav{
+            padding: 10px 0;
+        }
+    }
+    .m-nav{
+        .list{
+            li{
+                width: 100% !important;
+                a{
+                    line-height: 50px !important;
+                 }
+             }
+        }
+    }
+    .m-ft{
+        
+        .m-help{
+            display: block;
+            margin: 0;
+            padding: 0;
+            height: auto;
+            border-bottom: 1px solid #32c086;
+            p{
+                margin-bottom: 10px;
+            }
+            margin-bottom: 20px;
+        }
+        .u-share-wx{
+            float: none;
+        }
+    }
+    
+    
+    
+  }
+@media (max-width:576px){
+    .m-hd .top .shareLink a{
+        margin-left: 5px;
+    }
+    .m-hd .top .telNum{
+        font-size: 12px;
+    }
+}

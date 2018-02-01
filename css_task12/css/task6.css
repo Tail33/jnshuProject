@@ -1,0 +1,199 @@
+/* 重置 */
+html {
+  font-size: 312.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+a {
+  text-decoration: none;
+}
+/* 默认 */
+/* 统一设置雪碧图-背景图 */
+.location {
+  width: .42rem;
+  height: .44rem;
+  background: url('../images/task6_sprites.png') -10px -232px;
+}
+.date-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: .14rem;
+  background: url('../images/task6_sprites.png') -10px -10px;
+}
+.btn-icon {
+  float: right;
+  width: 10px;
+  height: 17px;
+  background: url('../images/task6_sprites.png') -10px -74px;
+}
+.icon-location {
+  width: 12px;
+  height: 12px;
+  margin-right: .14rem;
+  background: url('../images/task6_sprites.png') -10px -42px;
+}
+.home span {
+  display: inline-block;
+  width: .46rem;
+  height: .4rem;
+  background: url('../images/task6_sprites.png') -10px -111px;
+}
+.myself span {
+  display: inline-block;
+  width: .42rem;
+  height: .42rem;
+  background: url('../images/task6_sprites.png') -10px -191px;
+}
+.write span {
+  display: block;
+  width: .4rem;
+  height: .4rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -0.24rem 0 0 -0.19rem;
+  background: url('../images/task6_sprites.png') -10px -151px;
+}
+/* 统一清除浮动 */
+/* 布局 */
+.g-wrap {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 模块 */
+.m-hd {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  max-width: 920px;
+  width: 100%;
+  padding: .1rem 0;
+  background-color: #5fc0cd;
+}
+.m-hd .location {
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.m-hd .guzhuBtn {
+  background-color: #55a8b3;
+  color: #fff;
+}
+.m-hd .hugongBtn {
+  background-color: #fff;
+  color: #5fc0cd;
+  margin-left: -2px;
+}
+.m-nav {
+  margin-top: 0.94rem;
+}
+.m-mn {
+  margin-bottom: 1.12rem;
+}
+.m-mn .info-li {
+  padding: .3rem;
+  border-bottom: 1px solid #e1e5e7;
+  font-size: .26rem;
+  color: #999999;
+}
+.m-mn .info-li .icon-font {
+  display: flex;
+  align-items: flex-start;
+}
+.m-mn .info-li .icon-font span {
+  line-height: 1;
+}
+.m-mn .info-li .date-price {
+  display: flex;
+  align-items: center;
+}
+.m-mn .info-li .date-price > span {
+  flex: 1;
+  padding-left: .38rem;
+  overflow: hidden;
+  /*溢出隐藏*/
+  text-overflow: ellipsis;
+  /*文本溢出省略号*/
+  white-space: nowrap;
+  /*不换行*/
+  line-height: .72rem;
+  font-size: .28rem;
+  font-weight: bold;
+  color: #000;
+}
+.m-mn .info-li .date-price .price {
+  width: 1.82rem;
+  font-size: .3rem;
+  color: red;
+  line-height: .33rem;
+}
+.m-mn .info-li .date-price .price > span {
+  float: left;
+  line-height: 1;
+}
+.m-ft {
+  position: fixed;
+  bottom: 0;
+  max-width: 920px;
+  width: 100%;
+  padding: .1rem 0;
+  background-color: #f8fafb;
+}
+.m-ft .write {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.94rem;
+  height: 0.94rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #5fc0cd;
+}
+.m-ft p {
+  margin: 0;
+}
+.m-ft .home {
+  color: #5fc0cd;
+}
+.m-ft .myself {
+  color: #a5a5a5;
+}
+.m-ft > div {
+  cursor: pointer;
+}
+/* 元件 */
+.u-btn {
+  float: left;
+  width: 1.45rem;
+  border: none;
+  border-radius: 5px;
+  font-size: .34rem;
+  line-height: .7rem;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.u-icon {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+.u-select {
+  border: none;
+  margin: 0;
+  padding: 0 2%;
+  width: 33.33333333vw;
+}
+.u-select option {
+  text-align: center;
+}
+/* 功能 */
+/* 皮肤 */

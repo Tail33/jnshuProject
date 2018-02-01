@@ -1,0 +1,119 @@
+/* 重置 */
+html {
+  font-size: 312.5%;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+i {
+  margin-right: 0.3rem;
+  font-style: normal;
+  font-size: .32rem;
+  color: #5fc0cd;
+  line-height: 0.68rem;
+}
+/* 默认 */
+/* 统一调用背景图 */
+/* 统一清除浮动 */
+/* 布局 */
+.g-wrap {
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 模块 */
+.m-hd {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 0.3rem;
+  background-color: #5fc0cd;
+  text-align: center;
+}
+.m-hd > * {
+  line-height: .88rem;
+  color: #fff;
+}
+.m-hd a {
+  font-size: .32rem;
+}
+.m-hd h2 {
+  font-size: .36rem;
+}
+.m-input {
+  display: flex;
+  align-items: center;
+  margin-top: .15rem;
+  padding: 0.24rem 0.3rem;
+  background-color: #fff;
+}
+.m-input .img {
+  width: .6rem;
+  height: .5rem;
+  background-size: 100% 100%;
+}
+.m-input .image-phone {
+  background-image: url("../images/test4_03.png");
+}
+.m-input .image-password {
+  background-image: url("../images/test4_07.png");
+}
+/* 元件 */
+.u-input {
+  flex: 1;
+  margin-left: 0.3rem;
+  padding-left: .2rem;
+  border: none;
+  border-left: 2px solid #eaedee;
+  font-size: .32rem;
+  line-height: .5rem;
+}
+.u-input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e3e7e9;
+  font-size: 0.32rem;
+}
+.u-input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e3e7e9;
+  font-size: 0.32rem;
+}
+.u-input:-ms-input-placeholder {
+  color: #e3e7e9;
+  font-size: 0.32rem;
+}
+.u-input::-webkit-input-placeholder {
+  color: #e3e7e9;
+  font-size: 0.32rem;
+}
+.u-input:focus {
+  outline: none;
+}
+.u-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #5fc0cd;
+  margin-top: .72rem;
+  font-size: .36rem;
+  line-height: .98rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  outline: none;
+  cursor: pointer;
+}
+/* 功能 */
+.f-fr {
+  float: right;
+}
+/* 皮肤 */

@@ -1,0 +1,125 @@
+@skin-color:#5fc0cd;
+@main-color:#eff0f4;
+@font-color:#e3e7e9;
+@input-border-color:#eaedee;
+
+@padding-width:.3rem;//统一内边距
+
+/* 重置 */
+html{
+    font-size:50/16*100%;//1rem =50px;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    background-color: @main-color;
+}
+a{
+    text-decoration:none;
+}
+h2{
+    margin: 0;
+    font-weight: normal;
+}
+i{
+    margin-right: @padding-width;
+    font-style: normal;
+    font-size: .32rem;
+    color: @skin-color;
+    line-height: (18*2+32)/100rem;
+}
+/* 默认 */
+/* 统一调用背景图 */
+/* 统一清除浮动 */
+/* 布局 */
+.g-wrap{
+    max-width: 920px;
+    width:100%;
+    margin: 0 auto;
+}
+/* 模块 */
+.m-hd{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 @padding-width;
+    background-color: @skin-color;
+    text-align: center;
+    >*{
+        line-height: .88rem;
+        color:#fff;
+    }
+    a{
+        font-size: .32rem;
+    }
+    h2{
+        font-size: .36rem;
+    }
+}
+.m-input{
+    display: flex;
+    align-items: center;
+    margin-top: .15rem;
+    padding: .24rem @padding-width;
+    background-color: #fff;
+
+    .img{
+        width: .6rem;
+        height: .5rem;
+        background-size: 100% 100%;
+    }
+    .image-phone{
+        background-image: url("../images/test4_03.png");
+    }
+    .image-password{
+        background-image: url("../images/test4_07.png");        
+    }
+}
+/* 元件 */
+.u-input{
+    flex:1;
+    margin-left: @padding-width;
+    padding-left: .2rem;
+    border:none;
+    border-left: 2px solid @input-border-color;
+    font-size: .32rem;
+    line-height: .5rem;
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:@font-color;
+        font-size: 0.32rem;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:@font-color;
+        font-size: 0.32rem;
+    }  
+    &:-ms-input-placeholder{
+        color:@font-color;
+        font-size: 0.32rem;
+    }
+    &::-webkit-input-placeholder{
+        color:@font-color;
+        font-size: 0.32rem;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.u-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: @skin-color;
+    margin-top: .72rem;
+    font-size: .36rem;
+    line-height: .98rem;
+    color: #fff;
+    letter-spacing:0.1rem;
+    outline: none;
+    cursor: pointer;
+}
+/* 功能 */
+.f-fr{
+    float: right;
+}
+/* 皮肤 */

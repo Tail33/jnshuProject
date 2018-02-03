@@ -16,6 +16,70 @@ body{
 a{
     text-decoration:none;
 }
+/* 功能 */
+/* 1.模拟select下拉框 */
+.myless_select(@width:100px,@border-color:#000,@font-size:16px,@line-heigth:1.5){
+    position: relative;
+    width: @width;
+    box-sizing: border-box;
+    text-align: center;
+    .select{
+        position: relative;
+        border: 1px solid @border-color;
+        font-size: @font-size;
+        line-height: @line-heigth;
+    }
+    .select-triangle{
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .subBox{
+        display: none;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        top:100%;
+        left: 0;
+        right: 0; 
+        border: 1px solid @border-color;
+        border-top-width: 0;
+        background-color: #fff;
+    }
+}
+
+/* 2.三角形 */
+//匹配模式：三角形小图标的例子 
+//三角形图标
+//@_匹配三角形的角方向,@height三角形高度，@width三角形底边
+.myless_triangle(@_,@height:5px,@width:5px,@color:#000){
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    overflow: hidden;
+}
+.myless_triangle(right,@height:5px,@width:5px,@color:#000){
+    border-width:@width/2 0 @width/2 @height;
+    border-color: transparent transparent transparent @color;
+}
+
+.myless_triangle(left,@height:5px,@width:5px,@color:#000){
+    border-width:@width/2 @height @width/2 0;
+    border-color: transparent @color transparent transparent;
+}
+
+.myless_triangle(top,@height:5px,@width:5px,@color:#000){
+    border-width:0 @width/2 @height @width/2 ;
+    border-color: transparent transparent @color  transparent;
+}
+
+.myless_triangle(bottom,@height:5px,@width:5px,@color:#000){
+    border-width:@height @width/2 0 @width/2 ;
+    border-color: @color transparent  transparent transparent;
+}
 /* 默认 */
 /* 统一设置雪碧图-背景图 */
 .location {
@@ -72,6 +136,19 @@ a{
     width:100%;
     margin: 0 auto;
 }
+.g-nav{
+    // overflow: hidden;
+    margin-top: (47*2)/100rem;
+    .m-selectBox{
+        float: left;
+        color:@font-color;
+    }
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
 /* 模块 */
 .m-hd{
     display: flex;
@@ -98,9 +175,7 @@ a{
         margin-left: -2px;
     }
 }
-.m-nav{
-    margin-top: (47*2)/100rem;
-}
+
 .m-mn{
     margin-bottom: 56*2/100rem;
     .info-li {
@@ -175,6 +250,16 @@ a{
           cursor: pointer;
       }
 }
+.m-selectBox{
+    .myless_select(1/3*100%,#e1e5e7,.28rem,.8rem);
+    .select{
+        border-left-width: 0;
+        border-top-width: 0;
+    }
+    .select-triangle{
+        .myless_triangle(bottom,.08rem,.14rem,#afbac0);
+    }
+}
 /* 元件 */
 .u-btn{
     float: left;
@@ -203,5 +288,5 @@ a{
         }
 }
 
-/* 功能 */
+
 /* 皮肤 */

@@ -263,6 +263,9 @@
                 //绑定下拉列表hover的效果
                 var list = subBox.querySelectorAll("li");
                 Array.prototype.forEach.call(list, function (item) {
+                    item.onclick=function(){
+                        select.querySelector("span").innerHTML=item.innerHTML;
+                    };
                     item.onmouseover = function () {
                         item.style.backgroundColor = "red";
                     };

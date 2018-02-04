@@ -62,6 +62,7 @@ ul {
   height: .41rem;
   background: url('images/back-btn_03.png') no-repeat;
   background-size: 100% 100%;
+  cursor: pointer;
 }
 .m-hd > h1 {
   margin: 0;

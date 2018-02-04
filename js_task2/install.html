@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>配置页面</title>
+    <title>参数设置</title>
+    <link rel="stylesheet" href="./install.css">
 </head>
+
 <body>
-    <div>杀手<span id="game-killer"></span>人</div>
-    <div>平民<span id="game-civilian"></span>人</div>
-    <label for="">请输入玩家数量:<input type="text" id="game-n"></label>
-    <script src="install.js"></script> 
+    <div class="g-wrap">
+        <header class="g-head">
+            <div class="m-hd">
+                <div class="back-btn"></div>
+                <h1>参数设置</h1>
+            </div>
+
+        </header>
+        <main class="g-mn">
+
+            <div class="m-title">
+                <h2>玩家配比</h2>
+            </div>
+
+            <div class="m-allocation">
+                <ul>
+                    <li>杀手
+                        <span id="killer"></span>
+                        人
+                    </li>
+                    <li>平民
+                        <span id="civilian"></span>
+                        人
+                    </li>
+                </ul>
+            </div>
+
+            <div class="m-keyWorld"></div>
+            
+            <div class="m-setNum">
+                <label>
+                    请输入玩家人数
+                    <input type="text" id="palyN">
+                    <span class="tip">玩家人数为4~18人</span>
+                </label>
+                <div class="range">
+                    <span class="u-rgBtn" id="minusBtn">-</span>
+                    <input type="range" id="numRange" min="4" max="18" value="0">
+                    <span class="u-rgBtn" id="addBtn">+</span>
+                </div>
+
+            </div>
+            <div class="u-subBtn" id="send">去发牌</div>
+        </main>
+    </div>
+
+    <script src="./install.js"></script>
 </body>
+
 </html>

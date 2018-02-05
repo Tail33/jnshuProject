@@ -1,0 +1,150 @@
+@head-color:#29bde0;//头部背景颜色
+@padding-width:.17rem;//统一内边距
+@max-width:920px;
+@main-color:#f0f0f0;
+@skin-color:#fab344;//主题颜色
+/* 重置 */
+html{
+    font-size:50/16*100%;//1rem =50px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration:none;
+}
+p{
+    margin: 0;
+    line-height: 1;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 默认 */
+/* 统一设置背景色 */
+.m-title,.m-allocation,.m-setNum,.m-keyWorld{
+    background-color: #fff;
+}
+/* 统一清除浮动 */
+/* 布局 */
+.g-wrap{
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+.g-head{
+    position: fixed;
+    top:0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 @padding-width;
+    max-width: @max-width;
+    background-color: @head-color;
+}
+.g-mn{
+    margin-top: .74rem;
+    
+    background-color: @main-color;
+    padding: .2rem @padding-width;
+}
+/* 模块 */
+.m-hd{
+    position: relative;
+    .back-btn{
+        position: absolute;
+        left: 0;
+        top:50%;
+        transform: translateY(-50%);
+        width: .28rem;
+        height: .41rem;
+        background: url('../images/back-btn_03.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+    >h1{
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        font-size: .34rem;
+        font-weight: normal;
+        line-height: .75rem;
+    }
+}
+.m-title{
+    margin:.1rem 0;
+    h2{
+        margin: 0;
+        font-size: .34rem;
+        line-height: .75rem;
+        text-align: center;
+        font-weight: normal;
+    }
+}
+.m-allocation{
+    height: 4rem;
+    padding: .3rem;
+    margin-bottom: .1rem;
+    ul li{
+        float: left;
+        margin-right: .3rem;
+    }
+}
+.m-keyWorld{
+    height: 2rem;
+    margin-bottom: .1rem;   
+}
+.m-setNum{
+    height: 2rem;
+    padding: .1rem 0;
+    margin-bottom: .1rem; 
+    font-size: .34rem;
+    font-weight: bold;
+    line-height: .75rem;
+    text-align: center;  
+    input[type=text]{
+        width: .7rem;
+        margin: 0 .1rem;
+        font-size: .34rem;
+        line-height: .4rem;
+        border: none;
+        background-color: @main-color;
+        color:@skin-color;
+        text-align: center;
+    }
+    .tip{
+        font-size: .24rem;
+        color: @skin-color;
+    }
+    .range{
+        margin-top: .2rem;
+    }
+    input[type=range]{
+        vertical-align: middle;
+        margin: 0 .1rem;
+    }
+}
+/* 元件 */
+.u-subBtn{
+   background-color: @skin-color;
+   font-size: .4rem;
+   line-height: .9rem;
+   color: #fff;
+   text-align: center;
+   cursor: pointer;
+}
+.u-rgBtn{
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    width: .3rem;
+    vertical-align: middle;
+    line-height: .3rem;
+    color: @skin-color;
+    cursor:pointer;
+}
+/* 功能 */
+/* 皮肤 */

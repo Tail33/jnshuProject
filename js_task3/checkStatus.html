@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>查看身份</title>
+    <link rel="stylesheet" href="./css/checkStatus.css">
 </head>
 
 <body>
     <div class="g-wrap">
         <header class="g-hd">
             <div class="m-hd">
+                <div class="backBtn" onclick="window.location.href='./install.html'"></div>
+                <div class="closeBtn"></div>
                 <h1>查看身份</h1>
             </div>
         </header>
+
         <main class="g-mn">
             <div class="m-lookBox">
                 <span class="u-cri" id="index">1</span>
+
+                <!-- 查看身份 -->
+                <img src="./images/check.png" alt="翻牌" class="check">
+
+                <!-- 身份显示 -->
+                <div class="content-wrap">
+                        <img src="./images/content.png" alt="身份" class="content">
+                </div>
+                
                 <p id="identity"></p>
             </div>
             <div class="m-lookBtn">

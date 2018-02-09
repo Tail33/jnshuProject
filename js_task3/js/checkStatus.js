@@ -11,8 +11,11 @@
         this.i_crt = 1; //当前传递的身份在数组的位置
         this.status = true; //判断是查看身份还是传递身份
         this.checkBtn = checkBtn; //按钮
+        
         this.index = document.getElementById("index");
         this.identity = document.getElementById("identity");
+        this.check=document.querySelector(".check");
+        this.content=document.querySelector(".content-wrap");
     };
 
     App.prototype = {
@@ -20,16 +23,21 @@
         checkRenderPage: function () {
             //修改按钮文本
             this.checkBtn.value = "查看" + this.i_crt + "号身份";
-
+            
             //修改页面信息
+            this.check.style.display="inline";
+            this.content.style.display="none";
             this.index.innerHTML = this.i_crt;
             this.identity.innerHTML = "";
             this.status = false;
         },
+
         //传递身份页面
         deliRenderPage: function () {
             //修改页面信息
             this.identity.innerHTML = this.arys[this.i_crt - 1];
+            this.check.style.display="none";
+            this.content.style.display="block";
 
             if (this.i_crt === this.n) { //传递到最后一位玩家时
                 //修改按钮文本

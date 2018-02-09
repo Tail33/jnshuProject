@@ -30,7 +30,6 @@ h1{
     width: 100%;
     margin: 0 auto;
     // padding: 0 @padding-width;
-    
     color: #fff;
 }
 .g-hd{
@@ -41,15 +40,23 @@ h1{
     max-width: @max-width;
     padding: .3rem @padding-width .16rem;
     border-bottom: 1px solid #74d4eb;
+    background-color: @g-background-color;
+    z-index: 1000;
 }
 .g-mn{
     margin-top: 49px;
-    padding: .86rem 88/640*100% .6rem;
-    p{
-        color: #29bde0;
-        font-size: .4rem;
-        font-weight: bold;
-    }
+    margin-bottom: 100px;
+    padding: 0 @padding-width;
+    overflow: hidden;
+}
+.g-ft{
+    position: fixed;
+    padding: .46rem 0 .59rem;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: @max-width;
+    background-color: @g-background-color;
 }
 /* 模块 */
 .m-hd{
@@ -78,65 +85,53 @@ h1{
         right: 0;
     }
 }
-
-.m-lookBox{
-    position: relative;
-    height: 6.45rem;
-    border: .06rem solid #fff;
-    margin-bottom: 1.18rem;
-    background-color: @main-color;
-    text-align: center;
-    .check{
-        display: none;
-        margin-top: 1.8rem;
-        width: 3.02rem;
-    }
-    .content-wrap{
-        position: relative;
-        width: 2.23rem;
-        height: 2.23rem;
-        margin: .57rem auto .3rem;
-        border-radius: 50%;
-        background-color: #fbb435;
-        img{
-            position: absolute;
-            bottom:0;
-            left: .3rem;
-            width: 1.49rem;
-        }
-        
-    }
-
-}
-.m-lookBtn{
-    input[type="button"]{
-        display: block;
-        width: 100%;
-        border: none;
-        color: #fff;
-        line-height: .87rem;
-        font-size: .4rem;
-        background-color: @btn-color;
-        outline: none;
-        cursor: pointer;
-    }
-}
-/* 元件 */
-.u-cri{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top:-0.03rem;
-    left: 50%;
-    border-radius: 50%;
-    transform: translate(-50%,-50%);
-    width: .68rem;
-    height: .68rem;
-    background-color: #fff;
-    color: #f56b81;
+.m-btn{
+    width: 494/640*100%;
+    margin: 0 auto;
+    color: #fff;
+    line-height: .87rem;
     font-size: .4rem;
-    border:.04rem solid @main-color;
+    background-color: @btn-color;
+    cursor: pointer;
+    text-align: center;
 }
+.m-statusBox{
+    position: relative;
+    float: left;
+    // box-sizing: border-box;
+    width: 138/(640-34)*100%;
+    margin: .6rem 4.4%;
+    padding: ~'calc(22.772% / 2)' 0;
+    border: .05rem solid #fff;
+    >p{
+        width: 100%;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .4rem;
+        height: 75%;
+        background-color: #f5c97b;
+        line-height: 1;
+    }
+    >span{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #83b09a;
+        color: #fff;
+        height: 25%;
+        font-size: .32rem;
+        line-height: 1;
+    }
+}
+
+/* 元件 */
+
 /* 功能 */
 /* 皮肤 */
